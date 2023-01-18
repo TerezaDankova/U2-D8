@@ -13,18 +13,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 <style>
 .btn1 {
-  height: 200px;
-  width: 400px;
+  height: 100px;
+  width: 100vw;
   border: none;
-  color: rgb(0, 61, 9);  
+  color: rgb(131, 169, 134);  
+  background-color: rgba(105, 88, 58, 0.274);
 }
+.deals1 {
+  color: black;
+  font-size: 22px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 15px;
+}
+
 </style>
 </head>
 
 <body>     
+
+
 <!--navbar--> 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">🌴</a>
+    <a class="navbar-brand" href="#">AGENCY</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,224 +64,227 @@
  
 <!--first jumbotron-->
   <div id="first-jumbo" class="fake-jumbotron position-relative">
-      <img class="img-fluid d-block w-100" style="max-height: 800px; object-fit: cover; ;" src="./pics/29.webp">
+    <img class="img-fluid d-block w-100" style="max-height: 100vh; object-fit: cover; ;" src="./pics/17.webp">
       <div class="box position-absolute" style="left: 18%; top: 20%;">
-        <h1 class="display-4 text-white text-monospace">Hello, world!</h1>
+        <h1 class="display-4 text-white text-monospace">HELLO WORLD!</h1>
         <p class="d-none d-sm-block lead text-white text-monospace">We offer an attentive selection of hotels and villas that can be booked through us.</p>
     
     
         <hr class="my-4 d-none d-sm-none d-md-none d-lg-block" style="background-color:white">
         <p class="d-none d-sm-none d-md-none text-white text-monospace" style="font-size: 12px;">Come find your ideal Nest in Italy with us.</p>
-        <a class="d-none d-sm-none d-md-none d-lg-block btn btn-secondary btn-lg" style="width: 150px;" href="#" role="button">Learn more</a>
+        <button type="button" class="btn btn-secondary" id="firstBtn">See more</button>
       </div>
   </div>
-  
+
 <!--Deals of the week section-->
   <section class="deal-of-the-week" id="deal-of-the-week-section">
    
-    <button class="btn1" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
-      DEALS OF THE WEEK
+    <button class="btn1" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 ">
+      <span class="deals1">DEALS OF THE WEEK</span>
     </button>
     
-    <div class="jumbotron jumbotron-fluid collapse multi-collapse" id="multiCollapseExample2">
-      <div class="container border border-info shadow">
-        <h1 class="display-4 text-center text-monospace">Deals of the week</h1>
+    <div class="jumbotron jumbotron-fluid collapse multi-collapse" id="multiCollapseExample1"  style="background-color: rgb(255, 255, 255);">
+      <div class="container border border-info shadow mb-5">
         <p class="lead text-center font-weight-lighter">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
       </div>
-    </div>
-    <div class="container-fluid shadow multi-collapse" id="multiCollapseExample2">
-       <div class="row mb-5">
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
-                <img class="card-img-top" src="./pics/02.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Country Boutique Hotel & Ville</h5>
-                  <p class="card-text text-muted">Sicilia</p>
-                  <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
-                  <a href="#" class="btn btn-secondary">Book now</a>
+  
+      <div class="container-fluid shadow multi-collapse" id="multiCollapseExample1">
+        <div class="row mb-5">
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="card">
+                  <img class="card-img-top" src="./pics/02.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Country Boutique Hotel & Ville</h5>
+                    <p class="card-text text-muted">Sicilia</p>
+                    <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
+                    <a href="#" class="btn btn-secondary">Book now</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
-                <img class="card-img-top" src="./pics/01.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Country Boutique Hotel & Ville</h5>
-                  <p class="card-text text-muted">Sicilia</p>
-                  <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
-                  <a href="#" class="btn btn-secondary">Book now</a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="card">
+                  <img class="card-img-top" src="./pics/01.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Country Boutique Hotel & Ville</h5>
+                    <p class="card-text text-muted">Sicilia</p>
+                    <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
+                    <a href="#" class="btn btn-secondary">Book now</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
-                <img class="card-img-top" src="./pics/08.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Country Boutique Hotel & Ville</h5>
-                  <p class="card-text text-muted">Sicilia</p>
-                  <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
-                  <a href="#" class="btn btn-secondary">Book now</a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="card">
+                  <img class="card-img-top" src="./pics/08.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Country Boutique Hotel & Ville</h5>
+                    <p class="card-text text-muted">Sicilia</p>
+                    <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
+                    <a href="#" class="btn btn-secondary">Book now</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
-                <img class="card-img-top" src="./pics/06.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Country Boutique Hotel & Ville</h5>
-                  <p class="card-text text-muted">Sicilia</p>
-                  <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
-                  <a href="#" class="btn btn-secondary">Book now</a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="card">
+                  <img class="card-img-top" src="./pics/06.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Country Boutique Hotel & Ville</h5>
+                    <p class="card-text text-muted">Sicilia</p>
+                    <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
+                    <a href="#" class="btn btn-secondary">Book now</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-      </div>   
+          </div>
+        </div>   
+      </div>
     </div>
      
   </section>
- 
 
 
 
 <!--Welcome summer section-->
-  <section class="welcome-summer shadow-lg p-3 mt-5 mb-5 bg-white rounded" id="welcome-summer-section">
-    
+  <section class="welcome-summer shadow-lg bg-white rounded" id="welcome-summer-section">
+
+    <button class="btn1" type="button" data-toggle="collapse" data-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapseExample2">
+      <span class="deals1">WELCOME SUMMER</span>
+    </button>
   
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container border border-info shadow p-3">
-        <h1 class="display-4 text-center text-monospace">Welcome Summer</h1>
+    <div class="jumbotron jumbotron-fluid collapse multi-collapse2" id="multiCollapseExample2"  style="background-color: rgb(255, 255, 255);">
+      <div class="container border border-info shadow p-3 mb-5">
         <p class="lead text-center font-weight-lighter">Free cancellation on most hotels up to 24 hours before your trip. Because flexibility matters.</p>
       </div>
-    </div>
-    <div class="container-fluid">
-       <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
-            <div class="card shadow">
-                <img class="card-img-top" src="./pics/14.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Country Boutique Hotel & Ville</h5>
-                  <p class="card-text text-muted">Sicilia</p>
-                  <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
-                  <a href="#" class="btn btn-secondary">Book now</a>
+  
+      <div class="container-fluid shadow multi-collapse2" id="multiCollapseExample2">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+              <div class="card shadow">
+                  <img class="card-img-top" src="./pics/14.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Country Boutique Hotel & Ville</h5>
+                    <p class="card-text text-muted">Sicilia</p>
+                    <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
+                    <a href="#" class="btn btn-secondary">Book now</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
-            <div class="card shadow">
-                <img class="card-img-top" src="./pics/10.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Country Boutique Hotel & Ville</h5>
-                  <p class="card-text text-muted">Sicilia</p>
-                  <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
-                  <a href="#" class="btn btn-secondary">Book now</a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+              <div class="card shadow">
+                  <img class="card-img-top" src="./pics/10.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Country Boutique Hotel & Ville</h5>
+                    <p class="card-text text-muted">Sicilia</p>
+                    <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
+                    <a href="#" class="btn btn-secondary">Book now</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
-            <div class="card shadow">
-                <img class="card-img-top" src="./pics/11.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Country Boutique Hotel & Ville</h5>
-                  <p class="card-text text-muted">Sicilia</p>
-                  <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
-                  <a href="#" class="btn btn-secondary">Book now</a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+              <div class="card shadow">
+                  <img class="card-img-top" src="./pics/11.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Country Boutique Hotel & Ville</h5>
+                    <p class="card-text text-muted">Sicilia</p>
+                    <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
+                    <a href="#" class="btn btn-secondary">Book now</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
-            <div class="card shadow">
-                <img class="card-img-top" src="./pics/12.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Country Boutique Hotel & Ville</h5>
-                  <p class="card-text text-muted">Sicilia</p>
-                  <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
-                  <a href="#" class="btn btn-secondary">Book now</a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+              <div class="card shadow">
+                  <img class="card-img-top" src="./pics/12.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Country Boutique Hotel & Ville</h5>
+                    <p class="card-text text-muted">Sicilia</p>
+                    <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
+                    <a href="#" class="btn btn-secondary">Book now</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
-            <div class="card shadow">
-                <img class="card-img-top" src="./pics/13.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Country Boutique Hotel & Ville</h5>
-                  <p class="card-text text-muted">Sicilia</p>
-                  <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
-                  <a href="#" class="btn btn-secondary">Book now</a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+              <div class="card shadow">
+                  <img class="card-img-top" src="./pics/13.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Country Boutique Hotel & Ville</h5>
+                    <p class="card-text text-muted">Sicilia</p>
+                    <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
+                    <a href="#" class="btn btn-secondary">Book now</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
-            <div class="card shadow">
-                <img class="card-img-top" src="./pics/15.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Country Boutique Hotel & Ville</h5>
-                  <p class="card-text text-muted">Sicilia</p>
-                  <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
-                  <a href="#" class="btn btn-secondary">Book now</a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2">
+              <div class="card shadow">
+                  <img class="card-img-top" src="./pics/15.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Country Boutique Hotel & Ville</h5>
+                    <p class="card-text text-muted">Sicilia</p>
+                    <p class="card-text font-weight-lighter">11 guests – 5 bedrooms – 6 baths</p>
+                    <a href="#" class="btn btn-secondary">Book now</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-      </div>   
+          </div>
+        </div>   
+      </div>
     </div>
   </section>
 
 
 <!--Deal of the day section-->
-  <section class="deal-of-the-day d-sm-none d-md-block mb-5" style="background-color: rgb(255, 255, 255);" id="deal-of-the-day-section">
-        
+  <section class="deal-of-the-day d-sm-none d-md-block" style="background-color: rgb(255, 255, 255);" id="deal-of-the-day-section">
+    
+    <button class="btn1" type="button" data-toggle="collapse" data-target=".multi-collapse3" aria-expanded="false" aria-controls="multiCollapseExample3">
+      <span class="deals1">DEALS OF THE DAY</span>
+    </button>
 
-    <div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid collapse multi-collapse3" id="multiCollapseExample3"  style="background-color: rgb(255, 255, 255);">
      
-      <div class="jumbotron jumbotron-fluid" style="background-color: rgb(255, 255, 255);">
-        <div class="container border border-info shadow p-3">
-          <h1 class="display-4 text-center text-monospace">Deal of the day</h1>
-          <p class="lead text-center  font-weight-lighter">Just make sure you book soon to take advantage of these special deals.</p>
-        </div>
-      </div>
+    
 
-      <div class="row">
-        <div class="col-8">
-            <img src="./pics/28.webp" alt="vacation" style="max-width: 100%;">
-        </div>   
-        <div class="col-4 pr-5">
-        <div class="lorem">
-          <h1>Minimalist Farmhouse Villa</h1>
-          <hr>
-          <p>
-          Much more than a holiday house or even a “home away from home”.
-          This property has been turned into a real lifestyle concept.
-          </p>
-          <p>
-          Imagine… Under a traditional farmhouse exterior awaits an enchanting place. Beams and stones are still in place but the shadows have been chased away.
-          </p>
-          <p>
-          The 450m2 Villa offers 5 bedrooms for 11 people, all are en-suite with own bathroom and air conditioning.
-          Ground floor: double living with fireplace and TV, home theatre and Hifi Bang & Olufsen, professional dream kitchen in inox ArcLinea, dining room for 12 people, laundry room with washing machine and dryer, fitness room with runner and kinesis wall Technogym.
-       
-          </p>
-          <p class="font-weight-lighter">
-          Guest house: 1 bedroom with queen-size bed, closet and bathroom (shower), living room with panoramic views on the landscape until Monte Conero. Design and minimalist pool table.
-          Architecture & Interior Design • Slow living • Private Chef • Wine tastings •  Visit the towns closed by • Lunch on the Adriatic Sea • Tandem paraglider flight • Truffle hunting • Fly with hot air balloon • Yoga & relax • Trekking • Golf • Enjoy local cuisine • Discover the beautiful Marche Region • Ideal for private events
-          </p>
-          <h4>Final price</h4><hr><h6 class="font-weight-lighter">40.800€ per week</h6> 
-          </h4>
-
-        </div>
+        <div class="row" id="multiCollapseExample3">
+          <div class="col-8">
+              <img src="./pics/28.webp" alt="vacation" style="max-width: 100%;">
+          </div>   
+          <div class="col-4 pr-5">
+          <div class="lorem">
+            <h1>Minimalist Farmhouse Villa</h1>
+            <hr>
+            <p>
+            Much more than a holiday house or even a “home away from home”.
+            This property has been turned into a real lifestyle concept.
+            </p>
+            <p>
+            Imagine… Under a traditional farmhouse exterior awaits an enchanting place. Beams and stones are still in place but the shadows have been chased away.
+            </p>
+            <p>
+            The 450m2 Villa offers 5 bedrooms for 11 people, all are en-suite with own bathroom and air conditioning.
+            Ground floor: double living with fireplace and TV, home theatre and Hifi Bang & Olufsen, professional dream kitchen in inox ArcLinea, dining room for 12 people, laundry room with washing machine and dryer, fitness room with runner and kinesis wall Technogym.
         
-      </div>
-    </div>
+            </p>
+            <p class="font-weight-lighter">
+            Guest house: 1 bedroom with queen-size bed, closet and bathroom (shower), living room with panoramic views on the landscape until Monte Conero. Design and minimalist pool table.
+            Architecture & Interior Design • Slow living • Private Chef • Wine tastings •  Visit the towns closed by • Lunch on the Adriatic Sea • Tandem paraglider flight • Truffle hunting • Fly with hot air balloon • Yoga & relax • Trekking • Golf • Enjoy local cuisine • Discover the beautiful Marche Region • Ideal for private events
+            </p>
+            <h4>Final price</h4><hr><h6 class="font-weight-lighter">40.800€ per week</h6> 
+            </h4>
+
+          </div>
+          
+          </div>
+        </div>
+ 
   </section>
 
 
 <!--Last minute section-->
-  <section class="last-minute" style="background-color: rgb(209, 234, 255);" id="last-minute-section">
+  <section class="last-minute" style="background-color: rgb(255, 255, 255);" id="last-minute-section">
 
-    <div class="jumbotron jumbotron-fluid" style="background-color: rgb(209, 234, 255);">
+    <button class="btn1" type="button" data-toggle="collapse" data-target=".multi-collapse4" aria-expanded="false" aria-controls="multiCollapseExample4">
+      <span class="deals1">LAST MINUTE DESTINATIONS</span>
+    </button>
+
+  <div class="jumbotron jumbotron-fluid collapse multi-collapse4" id="multiCollapseExample4" style="background-color: rgb(255, 255, 255);">
       <div class="container border border-info shadow p-3">
-        <h1 class="display-4 text-center text-monospace">Last minute destinations</h1>
         <p class="lead text-center font-weight-lighter">Ever booked a vacation spur of the moment? No time like the present!</p>
       </div>
-    </div>
   
     <div class="container-flex">
 
@@ -368,6 +381,8 @@
 
        </div>   
     </div>
+  </div>
+  
   </section>
   
 <!--carousel section-->

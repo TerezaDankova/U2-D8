@@ -1,8 +1,9 @@
 //12) Create a button next to each section to collapse and reopen the given section
 
-$('#myCollapsible').shown.bs.collapse({
-  toggle: false
-})
+document.getElementById("firstBtn").onclick = function() {
+  
+}
+
 
 
 //13) Create a method that counts the number of “travels” on the page
